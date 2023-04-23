@@ -1,0 +1,39 @@
+1.Object relational Impedance mismatch means that object models and realtional models do not work well together
+
+RDBMS represents data in a tabular format, whereas object oriented languages , such as java represent it as an interconnected graph of object
+
+Loading and storing graph of object using tabluar
+relational database exposes us several mismatch problems.
+
+
+
+
+
+
+
+
+
+2.Storing object-oriented entities in a relational database is often not a simple 
+task and requires a great deal of repetitive code along with conversion 
+between data types. 
+
+Object-relational mapper, or O/RM, were created to solve this problem.
+ An 
+O/RM persists entities in and retrieves entities from relational databases 
+without the programmer having to write SQL statements and translate entity 
+properties to statement parameters and result set columns to entity properties.
+
+
+ORM solution:
+
+1.it is an API to perform CRUD operations on object of persistence classes
+
+2.It provides a language to specify queties that refer classes and properties of the class.
+
+3. It provides facility to specify mapping with different object graph
+
+
+So ORM,
+shields developers from the messy SQL
+
+it increases the productivity , maintainability and performance

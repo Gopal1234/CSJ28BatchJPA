@@ -1,0 +1,27 @@
+What is JPA:
+
+JPA is just an specification from Sun, which is released under JEE 5
+specification.
+
+JPA standardized the ORM persistence technology for Java
+developers. 
+
+It needs an ORM implementation to work and persist the Java Objects. ORM
+frameworks that can be used with JPA are Hibernate, Toplink, Open JPA etc.
+
+The Java Persistence API (JPA) is one approach to ORM. Via JPA the
+developer can map, store, update and retrieve data from relational databases
+to Java Objects and vice versa, JPA permits the developer to work directly
+with objects rather then with SQL statements. JPA is a specification and
+several implementations are available
+
+
+Advantages of JPA:
+1. You don't need to create tables. In some cases, you don't even need to 
+create a database. If any of your entity classes changes, the modern JPA 
+provider can be configured to adapt the tables.
+
+2. You don't need to write SQL statements, even though sometimes you may 
+have to work with JPQL, the Java Persistence Query Language.
+
+

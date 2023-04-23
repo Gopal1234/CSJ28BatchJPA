@@ -1,0 +1,31 @@
+1.New State :When an entity object is initially created its state is New. In this 
+state the object is not yet associated with an Entity Manager and has no 
+representation in the database.
+
+
+2.Managed State : An entity object becomes Managed when it is persisted to 
+the database via an EntityManager’s persist method which must be invoked 
+within an active transaction. On transaction commit, the owning Entity 
+Manager stores the new entity object to the database
+.
+Entity objects retrieved from the database by an EntityManager are also in the 
+Managed state.
+
+If a managed entity object is modified within an active transaction the change 
+is detected by the owning EntityManager and the update is propagated to the 
+database on transaction commit.
+
+
+
+
+3.Detached State : represents entity objects that have been disconnected from 
+the EntityManager. For instance, all the managed objects of an EntityManager 
+become detached when the EntityManager is closed.
+
+
+
+4.Removed State : A managed entity object can also be retrieved from the 
+database and marked for deletion, by using the EntityManager’s remove 
+method within an active transaction. The entity object changes its state from 
+Managed to Removed, and is physically deleted from the database during 
+commit.

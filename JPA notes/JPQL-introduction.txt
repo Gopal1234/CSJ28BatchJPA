@@ -1,0 +1,45 @@
+1. The JPQL (Java Persistence Query Language) is an object-oriented query language which is used to perform database operations on persistent entities. 
+
+2.Instead of database table, JPQL uses entity object model to operate the SQL queries. Here, the role of JPA is to transform JPQL into SQL. Thus, it provides an easy platform for developers to handle SQL tasks.
+
+3.JPQL is an extension of Entity JavaBeans Query Language (EJBQL), adding the following important features to it: -
+
+It can perform join operations.
+It can update and delete data in a bulk.
+It can perform aggregate function with sorting and grouping clauses.
+Single and multiple value result types.
+
+
+JPQL provides two methods that can be used to access database records. These methods are: -
+
+Query createQuery(String name) - The createQuery() method of EntityManager interface is used to create an instance of Query interface for executing JPQL statement.
+
+
+Query query = em.createQuery("Select s.s_name from StudentEntity s");  
+
+
+Query createNamedQuery(String name) - The createNamedQuery() method of EntityManager interface is used to create an instance of Query interface for executing named queries.
+@NamedQuery(name = "find name" , query = "Select s from StudentEntity s")  
+
+
+int executeUpdate() - This method executes the update and delete operation.
+
+int getFirstResult() - This method returns the first positioned result the query object was set to retrieve.
+
+
+int getMaxResults() - This method returns the maximum number of results the query object was set to retrieve.
+java.util.List getResultList() - This method returns the list of results as an untyped list.
+
+Query setFirstResult(int startPosition) - This method assigns the position of first result to retrieve.
+
+Query setMaxResults(int maxResult) - This method assigns the maximum numbers of result to retrieve.
+
+
+
+
+
+
+
+
+
+

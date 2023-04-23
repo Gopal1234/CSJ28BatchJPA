@@ -1,0 +1,31 @@
+What is Object Persistence?
+
+Persistence means to make application's data to outlive the application process.
+
+In java terms the object to live beyond the scope of the JVM , so that same state is available later.
+
+Example:
+class User                   User
+                           name    salary
+{                           Amit    2000
+String name;
+int salary
+}
+
+(Object world)
+
+
+The above diagram depicts mapping of object state into database table 
+columns. 
+To do so, traditionally, we rely on JDBC API, which allows 
+developers to save application data into database, however conversion is 
+required from object format to database table format which un-necessarily 
+increases line of code . 
+
+However, there are lot of challenges and mismatch in data processing in these 
+two models. 
+In addition, if database changes, then developer need to make 
+modification in the configuration which is database specific.
+So to shorten the development time, and to save application object directly into 
+database, there was need to reinvent the approach of mapping object and 
+relational model.
